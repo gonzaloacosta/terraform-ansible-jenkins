@@ -1,0 +1,44 @@
+# Local .terraform directories and files
+terraform/.terraform/*
+terraform/.terraform.*
+
+# vscode
+.vscode
+.env
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+terraform/*.tfstate
+terraform/*.tfstate.*
+
+# Crash log files
+crash.log
+*crash.log
+terraform/crash.log
+terraform/*crash.log
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform/override.tf
+terraform/override.tf.json
+terraform/*_override.tf
+terraform/*_override.tf.json
+
+# Don't include variable values
+*.tfvars
+*.tfstate
+terraform/*.tfvars
+*tfplan*/*/*.tfvars
+
+# Don't include temporal plan file created by ansible
+*apply_plan
+terraform/apply_plan
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
